@@ -1,0 +1,5 @@
+<% if @service_feedback.score < 3 %>
+  $('#service-feedback-container').html("<%= j render('comments_form') %>");
+<% else %>
+  $('#service-feedback-container').html("<%= j render('positive_thanks') %>");
+<% end %>

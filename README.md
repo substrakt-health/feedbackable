@@ -4,6 +4,24 @@ WIP.
 
 > Gain insights in to how your users feel when using your online services.
 
+## What is Feedbackable?
+
+When we develop a service online such as appointment booking, or requesting a medication we call this process **service design**. It incorporates our whole organisation from idea to design, to development, to deployment and finally **refinement through feedback**.
+
+Just because a service is launched, it doesn't mean it's finished.
+
+**Feedbackable** allows us to follow the mood of our users using a particular service by getting them to answer a simple question such as:
+
+> How easy did you find it to book an appointment today?
+
+Or...
+
+> How easy did you find it to read the graph with your blood pressure on it?
+
+and allows our users to respond very quickly with how they're feeling and then optionally add some feedback.
+![Example image of a feedbackable form](https://s3.eu-west-2.amazonaws.com/substrakthealth-public-scratch/feedbackable1.png)
+
+
 ## Why?
 
 Read our rationale blog post here (not yet written.)

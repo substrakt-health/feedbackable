@@ -1,0 +1,9 @@
+<h4 class="feedback__small-text"><%= t('activerecord.models.service_feedback.form.sorry') %></h4>
+<h2 class="feedback__large-text"><%= t('activerecord.models.service_feedback.form.easier_experience') %></h2>
+
+<%= form_for @service_feedback, remote: true do |f| %>
+<ul class="form-fields">
+  <li><%= f.text_area :comments, autofocus: true, rows: 6, cols: 48, placeholder: t('activerecord.models.service_feedback.form.placeholder') %></li>
+  <li><%= f.submit 'Submit'  %></li>
+</ul>
+<% end %>

@@ -1,0 +1,24 @@
+<div id="service-feedback-container" class="card card--rounded card--padding30 feedback max-600">
+  <h4 class="feedback__small-text"><%= t('activerecord.models.service_feedback.form.title') %></h4>
+  <h2 class="feedback__large-text"><%= @service_feedback.question_text %></h2>
+  <ul class="feedback__responses">
+    <%= form_for @service_feedback, remote: true do |f| %>
+      <%= f.hidden_field :service %>
+      <li>
+        <%= f.button '😠', name: 'service_feedback[score]', value: 1, title: 'Your answer: Unhappy', class: 'response-face response--unhappy' do %>
+          <%= inline_svg('feedback/response--unhappy.svg') %>
+        <% end %>
+      </li>
+      <li>
+        <%= f.button '😐', name: 'service_feedback[score]', value: 2, title: 'Your answer: Neutral', class: 'response-face response--neutral' do %>
+          <%= inline_svg('feedback/response--neutral.svg') %>
+        <% end %>
+      </li>
+      <li>
+        <%= f.button '😃', name: 'service_feedback[score]', value: 3, title: 'Your answer: Happy', class: 'response-face response--happy' do %>
+          <%= inline_svg('feedback/response--happy.svg') %>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+</div>
