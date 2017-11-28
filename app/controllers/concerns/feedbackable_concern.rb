@@ -5,11 +5,11 @@
 #
 # Example usage:
 #
-# include Feedbackable
+# include FeedbackableConcern
 # gather_feedback_for service: :booked_appointment
 #
 # <%= service_feedback_form %> in the view
-module Feedbackable
+module FeedbackableConcern
   extend ActiveSupport::Concern
 
   included do

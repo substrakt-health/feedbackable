@@ -13,5 +13,8 @@ class FeedbackableGenerator < Rails::Generators::Base
     EOF
     generate 'migration', 'create_service_feedbacks score:integer comments:text service:integer created_at:datetime updated_at:datetime'
     rake 'db:migrate'
+    initializer 'feedbackable.rb' do
+      "include ServiceFeedbacksHelper"
+    end
   end
 end
