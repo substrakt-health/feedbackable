@@ -14,5 +14,4 @@ class FeedbackableGenerator < Rails::Generators::Base
     generate 'migration', 'create_service_feedbacks score:integer comments:text service:integer created_at:datetime updated_at:datetime'
     rake 'db:migrate'
   end
-
 end
