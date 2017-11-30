@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 84 84" xmlns="http://www.w3.org/2000/svg">
+<title>Feedback Response - Neutral</title>
+<desc>Created with Sketch.</desc>
+<g fill="none" fill-rule="evenodd">
+<g transform="translate(1 1)">
+<circle cx="40.691" cy="40.833" r="40" fill="#F5CF6A" stroke="#EFB964" stroke-width="3"/>
+<circle cx="58.56" cy="45.833" r="3" fill="#000" opacity=".5"/>
+<circle cx="21.549" cy="45.833" r="3" fill="#000" opacity=".5"/>
+<path d="m36.691 60.117h7.5513" opacity=".5" stroke="#000" stroke-linecap="round" stroke-width="4"/>
+</g>
+</g>
+</svg>

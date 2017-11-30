@@ -1,0 +1,198 @@
+@mixin break($point) {
+   @if $point == desk--extra-wide {
+      @media (min-width: $desk--extra-wide) { @content; }
+   }
+   @else if $point == desk--wide {
+      @media (min-width: $desk--wide) { @content; }
+   }
+   @else if $point == desk {
+      @media (min-width: $desk) { @content; }
+   }
+   @else if $point == tablet {
+      @media (min-width: $tablet)  { @content; }
+   }
+   @else if $point == mobile {
+      @media (max-width: $mobile-max)  { @content; }
+   }
+   @media (min-width: $point)  { @content; }
+}
+
+.ff-bold, .ff-reg, .ff-light, .ff-thin, .ff-semi-bold {
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased !important;
+  text-rendering: optimizeLegibility !important;
+}
+
+.clear-list {
+	list-style: none;
+	padding-left: 0;
+    margin: 0;
+	> li {
+		list-style: none;
+        margin: 0;
+	}
+}
+
+//
+// Feedback forms
+//
+
+.feedback__small-text {
+  color: #1891AC;
+  margin-bottom: 1.5em;
+}
+
+.feedback__large-text {
+  @extend .ff-semi-bold;
+  @include break(980) {
+    font-size: 1.875rem;
+    line-height: 1.25em;
+  }
+}
+
+.feedback__responses {
+  @extend .clear-list;
+  li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-bottom: 6px;
+  }
+}
+
+.response-face {
+    display: block;
+    border: 4px solid transparent!important;
+    border-radius: 55px!important;
+    padding: 4px!important;
+    height: auto!important;
+    background: none;
+    top: 0;
+    position: relative;
+    // &:hover {
+    //   top: -10px;
+    // }
+    &:hover, &:focus {
+      border-color: #E3E2DF!important;
+      outline-style: none!important;
+    }
+    img, svg {
+      display: block;
+      width: 80px;
+      max-width: 55px;
+      height: auto;
+      border-radius: 55px;
+    }
+    @include break(980) {
+      img, svg {
+        max-width: 80px;
+        border-radius: 80px;
+      }
+    }
+}
+
+//
+// Cards
+//
+
+.card {
+    background: white;
+    border: 3px solid #BEBDBA;
+    text-align: left;
+    margin-bottom: 20px;
+    // -webkit-box-shadow: 0 0 10px 4px rgba(0,0,0,0.05);
+    // box-shadow: 0 0 10px 4px rgba(0,0,0,0.05);
+    @include break(960) {
+        margin-bottom: 30px;
+    }
+}
+
+.card--padding20 {
+    padding: 10px;
+    @include break(960) {
+        padding: 20px;
+    }
+}
+
+
+.card--padding30 {
+    padding: 10px;
+    @include break(960) {
+        padding: 20px;
+    }
+    @include break(960) {
+        padding: 30px;
+    }
+}
+
+.card--rounded {
+    border-radius: 4px;
+    @include break(960) {
+        border-radius: 6px;
+    }
+}
+
+.card--link {
+    text-decoration: none;
+    display: block;
+    &:hover {
+        color: black;
+    }
+    .card {
+        &:hover {
+            border-color: #EFB964;
+        }
+    }
+    .bullet-list {
+        display: none;
+    }
+    @include break(960) {
+        .bullet-list {
+          display: block;
+        }
+    }
+}
+
+.border--thick {
+    border-width: 3px;
+}
+
+// Appointment Choice Card
+.card--with-subheading {
+    .copy-wrapper {
+        padding-top: 3%;
+    }
+    h2 strong {
+        color: #1891AC;
+        border-bottom: 3px solid #1891AC;
+        padding-bottom: 6px;
+        display: inline-block;
+    }
+    @include break(960) {
+        .copy-wrapper {
+            padding-right: 30px;
+        }
+        .subheading {
+            margin-top: -10px;
+        }
+    }
+}
+
+// Stacking rows within a card
+
+.card__footer, .card__row {
+    padding: 10px;
+    @include break(960) {
+        padding: 30px;
+    }
+}
+
+.card__row {
+    border-bottom: 2px solid #E3E2DF;
+}
+
+.max-600 {
+    max-width: 600px;
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 84 84" xmlns="http://www.w3.org/2000/svg">
+<title>Feedback Response - Unhappy</title>
+<desc>Created with Sketch.</desc>
+<g fill="none" fill-rule="evenodd">
+<g transform="translate(1 1)">
+<circle cx="40.927" cy="40.833" r="40" fill="#E16A6A" stroke="#CB6061" stroke-width="3"/>
+<g transform="translate(18.027 39.117)">
+<path d="m3.6507 11.659c1.9882 0 3.6-1.6118 3.6-3.6s-1.6118-3.6-3.6-3.6c-1.9882 0-3.6 1.6118-3.6 3.6s1.6118 3.6 3.6 3.6z" fill="#000" opacity=".5"/>
+<rect transform="translate(4.8777 4.4587) rotate(26) translate(-4.8777 -4.4587)" x=".67775" y="2.0587" width="8.4" height="4.8" fill="#E16A6A"/>
+</g>
+<g transform="translate(53.027 39.117)">
+<circle cx="6.0638" cy="8.0587" r="3.6" fill="#000" opacity=".5"/>
+<rect transform="translate(4.8368 4.4587) scale(-1 1) rotate(26) translate(-4.8368 -4.4587)" x=".63678" y="2.0587" width="8.4" height="4.8" fill="#E16A6A"/>
+</g>
+<path d="m33.873 60.449s2.5423-3.3319 6.9888-3.3319 7.1185 3.3319 7.1185 3.3319" opacity=".5" stroke="#000" stroke-linecap="round" stroke-width="4"/>
+</g>
+</g>
+</svg>

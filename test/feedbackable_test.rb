@@ -12,4 +12,8 @@ class Feedbackable::Test < ActiveSupport::TestCase
   test 'ServiceFeedbacksHelper is available' do
     assert_kind_of Module, ServiceFeedbacksHelper
   end
+
+  test 'ServiceFeedback model is available' do
+    assert_kind_of ServiceFeedback, ServiceFeedback.new
+  end
 end
